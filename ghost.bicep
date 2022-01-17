@@ -113,7 +113,7 @@ module frontDoor 'modules/frontDoor.bicep' = {
   params: {
     frontDoorName: frontDoorName
     wafPolicyName: wafPolicyName
-    appServiceWebAppName: appServiceWebApp.name
+    appServiceWebAppName: appServiceWebApp.outputs.name
   }
 }
 
