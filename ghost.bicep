@@ -117,7 +117,7 @@ module frontDoor 'modules/frontDoor.bicep' = {
   }
 }
 
-output webAppName string = appServiceWebApp.outputs.name
-output webAppPrincipalId string = appServiceWebApp.outputs.principalId
-output webAppHostName string = appServiceWebApp.outputs.hostname
+output appServiceWebAppName string = appServiceWebApp.outputs.name
+output appServiceWebAppPrincipalId string = appServiceWebApp.outputs.principalId
+output appServiceWebAppHostName string = appServiceWebApp.outputs.hostname
 output endpointHostName string = frontDoor.outputs.frontendEndpointHostName
