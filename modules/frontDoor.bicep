@@ -26,6 +26,7 @@ resource existingWebApp 'Microsoft.Web/sites@2021-02-01' existing = {
 
 resource frontDoor 'Microsoft.Network/frontDoors@2020-05-01' = {
   name: frontDoorName
+  location: 'global'
   properties: {
     routingRules: [
       {
